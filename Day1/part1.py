@@ -1,12 +1,5 @@
 # Source: https://adventofcode.com/2015/day/1
 
-# hopefully this is not too bad
-# Try it with dictionaries if you want ;)
-# I'm not sure if it's faster or not
-# Or maybe tuples?
-
-# I'll check with AI :)
-
 """
 --- Day 1: Calorie Counting ---
 Santa's reindeer typically eat regular reindeer food, but they need a lot of magical energy to deliver presents on Christmas. For that, their favorite snack is a special type of star fruit that only grows deep in the jungle. The Elves have brought you on their annual expedition to the grove where the fruit grows.
