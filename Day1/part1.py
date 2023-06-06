@@ -50,15 +50,15 @@ Your puzzle answer was 69206.
 """
 elf:int=0
 sum_cal:int=0
-max_cal :list[int]=[0,0]
+max_cal :dict={"elf":0,"calories":0}
 with open ("calories.txt", "r") as calories_list:
     for calories in calories_list:
         if calories == "\n":
-            if sum_cal>max_cal[1]:
-                max_cal[0]=elf
-                max_cal[1]=sum_cal
+            if sum_cal>max_cal["calories"]:
+                max_cal["elf"]=elf
+                max_cal["calories"]=sum_cal
             elf+=1
             sum_cal=0
         else:
             sum_cal+=int(calories)
-print(f"The elf with the most calories is {max_cal[0]} with {max_cal[1]} calories.")
+print(f"The elf with the most calories is {max_cal['elf']} with {max_cal['calories']} calories.")
